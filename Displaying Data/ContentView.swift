@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selection = Set<String>()
+    @State private var selection = Set<String>() //TODO: How do I do single selection?
     
     let names = [
         "Cyril",
