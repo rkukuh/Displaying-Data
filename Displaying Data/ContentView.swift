@@ -10,36 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         List {
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
+            Section(header: Text("Grouped")) {
+                Text("Hello, static scrollable list")
+                Text("Hello, static scrollable list")
+                Text("Hello, static scrollable list")
+                Text("Hello, static scrollable list")
+                Text("Hello, static scrollable list")
+            }
         }
+        .listStyle(.grouped)
     }
 }
 
