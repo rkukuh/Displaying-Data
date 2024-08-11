@@ -10,35 +10,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         List {
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
+            Text("Pepperoni pizza")
+                .swipeActions {
+                    Button("Order") {
+                        print("Awesome!")
+                    }
+                    .tint(.green)
+                }
             
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
+            Text("Pepperoni with pineapple")
+                .swipeActions {
+                    Button("Burn") {
+                        print("Right on!")
+                    }
+                    .tint(.red)
+                }
         }
     }
 }
