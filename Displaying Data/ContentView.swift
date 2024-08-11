@@ -9,13 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List {
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
+            Text("Hello, static scrollable list")
         }
-        .padding()
     }
 }
 
