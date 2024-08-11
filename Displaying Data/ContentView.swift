@@ -12,11 +12,19 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            List($users, id: \.self, editActions: .delete) { $user in
-                Text(user)
-                    .deleteDisabled(users.count < 3) // at least 2 rows present
+            List {
+                ForEach(users, id: \.self) { user in
+                    Text(user)
+                }
+                .onDelete(perform: delete)
             }
         }
+    }
+    
+    func delete(at offsets: IndexSet) {
+        users.remove(atOffsets: offsets)
+        
+        print("User index: \(offsets.first!) deleted")
     }
 }
 
