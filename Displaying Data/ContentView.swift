@@ -14,6 +14,7 @@ struct ContentView: View {
         NavigationStack {
             List($users, id: \.self, editActions: .move) { $user in
                 Text(user)
+                    .moveDisabled(user == "Nicola")
             }
         }
     }
