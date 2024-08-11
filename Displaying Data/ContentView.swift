@@ -12,7 +12,7 @@ struct ContentView: View {
         ScrollViewReader { proxy in
             VStack {
                 Button("Jump to #50") {
-                    proxy.scrollTo(50)
+                    proxy.scrollTo(50, anchor: .top)
                 }
                 
                 List(0..<1000, id: \.self) { i in
