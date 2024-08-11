@@ -14,6 +14,7 @@ struct ContentView: View {
         NavigationStack {
             List($users, id: \.self, editActions: .delete) { $user in
                 Text(user)
+                    .deleteDisabled(users.count < 3) // at least 2 rows present
             }
         }
     }
