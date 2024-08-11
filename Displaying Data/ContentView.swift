@@ -15,6 +15,7 @@ struct ContentView: View {
                 TaskRow()
                 TaskRow()
             }
+            .headerProminence(.increased)
             
             Section(header: Text("Other tasks"), footer: Text("This is the footer")) {
                 TaskRow()
