@@ -8,37 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var users = ["Glenn", "Malcolm", "Nicola", "Terri"]
+    
     var body: some View {
-        List {
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
+        NavigationStack {
+            List($users, id: \.self, editActions: .delete) { $user in
+                Text(user)
+            }
         }
     }
 }
