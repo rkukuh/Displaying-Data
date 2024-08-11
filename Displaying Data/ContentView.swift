@@ -8,29 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
-    let friends = ["Antoine", "Bas", "Curt", "Dave", "Erica"]
+    @State private var total = 0
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(friends, id: \.self) { friend in
-                    Text(friend)
-                        .swipeActions(allowsFullSwipe: false) {
+                ForEach(1..<100) { i in
+                    Text("\(i)")
+                        .swipeActions(edge: .leading) {
                             Button {
-                                print("Muting conversation")
+                                total += i
                             } label: {
-                                Label("Mute", systemImage: "bell.slash.fill")
+                                Label("Add \(i)", systemImage: "plus.circle")
                             }
                             .tint(.indigo)
-                            
-                            Button(role: .destructive) {
-                                print("Deleting conversation")
+                        }
+                        .swipeActions(edge: .trailing) {
+                            Button {
+                                total -= i
                             } label: {
-                                Label("Delete", systemImage: "trash.fill")
+                                Label("Subtract \(i)", systemImage: "minus.circle")
                             }
                         }
                 }
             }
+            .navigationTitle("Total: \(total)")
         }
     }
 }
