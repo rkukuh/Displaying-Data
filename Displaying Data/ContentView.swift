@@ -25,7 +25,11 @@ struct ContentView: View {
             }
             .navigationTitle("Contacts")
         }
-        .searchable(text: $searchText)
+        .searchable(text: $searchText) {
+            ForEach(searchResults, id: \.self) { result in
+                Text("Are you looking for \(result)?").searchCompletion(result)
+            }
+        }
     }
     
     var searchResults: [String] {
