@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         List {
-            Section(header: Text("Grouped")) {
+            Section(header: Text("Inset Grouped")) {
                 Text("Hello, static scrollable list")
                 Text("Hello, static scrollable list")
                 Text("Hello, static scrollable list")
@@ -18,7 +18,7 @@ struct ContentView: View {
                 Text("Hello, static scrollable list")
             }
         }
-        .listStyle(.grouped)
+        .listStyle(.insetGrouped) // newer style
     }
 }
 
