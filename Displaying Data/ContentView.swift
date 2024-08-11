@@ -8,37 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection = Set<String>()
+    
+    let names = [
+        "Cyril",
+        "Lana",
+        "Mallory",
+        "Sterling"
+    ]
+    
     var body: some View {
-        List {
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
+        NavigationStack {
+            List(names, id: \.self, selection: $selection) { name in
+                Text(name)
+            }
+            .navigationTitle("List Selection")
+            .toolbar {
+                EditButton()
+            }
         }
     }
 }
