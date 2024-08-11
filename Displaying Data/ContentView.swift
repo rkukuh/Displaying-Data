@@ -8,37 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    let items: [Bookmark] = [.example1, .example2, .example3]
+    
     var body: some View {
-        List {
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
-            Text("Hello, static scrollable list")
+        List(items, children: \.items) { row in
+            HStack {
+                Image(systemName: row.icon)
+                Text(row.name)
+            }
         }
     }
 }
