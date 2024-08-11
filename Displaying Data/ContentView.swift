@@ -16,7 +16,7 @@ struct ContentView: View {
                 TaskRow()
             }
             
-            Section(header: Text("Other tasks")) {
+            Section(header: Text("Other tasks"), footer: Text("This is the footer")) {
                 TaskRow()
                 TaskRow()
                 TaskRow()
