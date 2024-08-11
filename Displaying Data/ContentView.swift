@@ -12,11 +12,22 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            List($users, id: \.self, editActions: .move) { $user in
-                Text(user)
-                    .moveDisabled(user == "Nicola")
+            List {
+                ForEach(users, id: \.self) { user in
+                    Text(user)
+                }
+                .onMove(perform: move)
+            }
+            .toolbar {
+                EditButton()
             }
         }
+    }
+    
+    func move(from source: IndexSet, to destination: Int) {
+        users.move(fromOffsets: source, toOffset: destination)
+        
+        print("User index: \(source.first!), destination: \(destination)")
     }
 }
 
