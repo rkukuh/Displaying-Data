@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack {
+        let columnLayout = [
+            GridItem(.flexible()),
+            GridItem(.flexible())
+        ]
+        
+        LazyVGrid(columns: columnLayout) {
             VStack {
                 Image("hero-1")
                     .resizable()
@@ -25,11 +30,7 @@ struct ContentView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 18))
                 Text("Akai")
             }
-        }
-        .padding(.horizontal, 8)
-        
-        
-        HStack {
+            
             VStack {
                 Image("hero-3")
                     .resizable()
@@ -45,8 +46,56 @@ struct ContentView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 18))
                 Text("Alice")
             }
+            
+            VStack {
+                Image("hero-5")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .clipShape(RoundedRectangle(cornerRadius: 18))
+                Text("Alpha")
+            }
+            
+            VStack {
+                Image("hero-6")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .clipShape(RoundedRectangle(cornerRadius: 18))
+                Text("Alucard")
+            }
+            
+            VStack {
+                Image("hero-7")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .clipShape(RoundedRectangle(cornerRadius: 18))
+                Text("Angela")
+            }
+            
+            VStack {
+                Image("hero-8")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .clipShape(RoundedRectangle(cornerRadius: 18))
+                Text("Argus")
+            }
+            
+            VStack {
+                Image("hero-9")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .clipShape(RoundedRectangle(cornerRadius: 18))
+                Text("Arlot")
+            }
+            
+            VStack {
+                Image("hero-10")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .clipShape(RoundedRectangle(cornerRadius: 18))
+                Text("Atlas")
+            }
         }
-        .padding(.horizontal, 8)
+        .padding(8)
     }
 }
 
