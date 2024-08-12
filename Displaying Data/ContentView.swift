@@ -12,7 +12,7 @@ struct ContentView: View {
         List(0..<51) { i in
             Label("Row \(i)", systemImage: "\(i).circle")
                 .alignmentGuide(.listRowSeparatorLeading) { d in
-                    d[.leading]
+                    100
                 }
         }
     }
