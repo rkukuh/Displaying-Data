@@ -9,37 +9,108 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List {
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
+        HStack(alignment: .top) {
+            Image("hero-1")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 80)
+                .clipShape(RoundedRectangle(cornerRadius: 18))
             
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
+            VStack(alignment:.leading){
+                Text("Aamon")
+                    .font(.title3)
+                    .bold()
+                Text("Hero Class")
+                    .foregroundColor(.secondary)
+            }
             
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
-            Text("Hello, scrollable list")
+            Spacer()
         }
+        .padding()
+        
+        Divider()
+        
+        HStack(alignment: .top) {
+            Image("hero-2")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 80)
+                .clipShape(RoundedRectangle(cornerRadius: 18))
+            
+            VStack(alignment:.leading){
+                Text("Akai")
+                    .font(.title3)
+                    .bold()
+                Text("Hero Class")
+                    .foregroundColor(.secondary)
+            }
+            
+            Spacer()
+        }
+        .padding()
+        
+        Divider()
+        
+        HStack(alignment: .top) {
+            Image("hero-3")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 80)
+                .clipShape(RoundedRectangle(cornerRadius: 18))
+            
+            VStack(alignment:.leading){
+                Text("Aldous")
+                    .font(.title3)
+                    .bold()
+                Text("Hero Class")
+                    .foregroundColor(.secondary)
+            }
+            
+            Spacer()
+        }
+        .padding()
+        
+        Divider()
+        
+        HStack(alignment: .top) {
+            Image("hero-4")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 80)
+                .clipShape(RoundedRectangle(cornerRadius: 18))
+            
+            VStack(alignment:.leading){
+                Text("Alice")
+                    .font(.title3)
+                    .bold()
+                Text("Hero Class")
+                    .foregroundColor(.secondary)
+            }
+            
+            Spacer()
+        }
+        .padding()
+        
+        Divider()
+        
+        HStack(alignment: .top) {
+            Image("hero-5")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 80)
+                .clipShape(RoundedRectangle(cornerRadius: 18))
+            
+            VStack(alignment:.leading){
+                Text("Alpha")
+                    .font(.title3)
+                    .bold()
+                Text("Hero Class")
+                    .foregroundColor(.secondary)
+            }
+            
+            Spacer()
+        }
+        .padding()
     }
 }
 
