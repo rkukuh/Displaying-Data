@@ -111,6 +111,111 @@ struct ContentView: View {
             Spacer()
         }
         .padding()
+        
+        Divider()
+        
+        HStack(alignment: .top) {
+            Image("hero-6")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 80)
+                .clipShape(RoundedRectangle(cornerRadius: 18))
+            
+            VStack(alignment:.leading){
+                Text("Alucard")
+                    .font(.title3)
+                    .bold()
+                Text("Hero Class")
+                    .foregroundColor(.secondary)
+            }
+            
+            Spacer()
+        }
+        .padding()
+        
+        Divider()
+        
+        HStack(alignment: .top) {
+            Image("hero-7")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 80)
+                .clipShape(RoundedRectangle(cornerRadius: 18))
+            
+            VStack(alignment:.leading){
+                Text("Angela")
+                    .font(.title3)
+                    .bold()
+                Text("Hero Class")
+                    .foregroundColor(.secondary)
+            }
+            
+            Spacer()
+        }
+        .padding()
+        
+        Divider()
+        
+        HStack(alignment: .top) {
+            Image("hero-8")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 80)
+                .clipShape(RoundedRectangle(cornerRadius: 18))
+            
+            VStack(alignment:.leading){
+                Text("Argus")
+                    .font(.title3)
+                    .bold()
+                Text("Hero Class")
+                    .foregroundColor(.secondary)
+            }
+            
+            Spacer()
+        }
+        .padding()
+        
+        Divider()
+        
+        HStack(alignment: .top) {
+            Image("hero-9")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 80)
+                .clipShape(RoundedRectangle(cornerRadius: 18))
+            
+            VStack(alignment:.leading){
+                Text("Arlott")
+                    .font(.title3)
+                    .bold()
+                Text("Hero Class")
+                    .foregroundColor(.secondary)
+            }
+            
+            Spacer()
+        }
+        .padding()
+        
+        Divider()
+        
+        HStack(alignment: .top) {
+            Image("hero-10")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 80)
+                .clipShape(RoundedRectangle(cornerRadius: 18))
+            
+            VStack(alignment:.leading){
+                Text("Atlas")
+                    .font(.title3)
+                    .bold()
+                Text("Hero Class")
+                    .foregroundColor(.secondary)
+            }
+            
+            Spacer()
+        }
+        .padding()
     }
 }
 
